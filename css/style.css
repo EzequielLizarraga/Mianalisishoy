@@ -364,9 +364,9 @@ footer h3{
     font-size: 12px;
     background-color: #f8f8f8;
     }
-    header ul li{
+    header nav ul{
         align-items: center;
-        padding: 5px;
+        padding: 10px;
     }
     .contacto{
         flex-direction: column;
