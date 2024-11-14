@@ -243,9 +243,9 @@ footer h3{
 }
 
 .cartassec{
-    height: 700px;
+    height: 600px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: #f8f8f8;
 }
