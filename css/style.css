@@ -236,11 +236,13 @@ footer h3{
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .textocontacto{
+    align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 100%;
 }
 
 .cartassec{
@@ -354,7 +356,9 @@ footer h3{
     background-color: #f8f8f8;
 }
 
-
+.espacio{
+    padding: 200px;
+}
 
 @media screen and (max-width:660px){
     header{
@@ -364,9 +368,18 @@ footer h3{
     padding: 2px;
     }
     .contacto{
-        height: 1500px;
+        height: 1400px;
         background-color: #f8f8f8;
         justify-content: space-evenly;
+    }
+    .contacto h2{
+        font-size: 100%;
+    }
+    .contacto p{
+        font-size: 100%;
+    }
+    .boton{
+        font-size: 100%;
     }
     .pacientes h2{
     font-size: 30px;
