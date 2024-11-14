@@ -173,7 +173,7 @@ footer h3{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: space-evenly;
     padding: 40px;
 }
 .pacientes h2{
@@ -219,7 +219,7 @@ footer h3{
     background-attachment: fixed; 
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: space-evenly;
     padding: 40px;
 }
 
