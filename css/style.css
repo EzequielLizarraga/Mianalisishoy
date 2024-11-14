@@ -233,15 +233,13 @@ footer h3{
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .textocontacto{
-    align-items: center;
     text-align: center;
-    font-size: 100%;
 }
 
 .cartassec{
@@ -356,7 +354,8 @@ footer h3{
 }
 
 .espacio{
-    padding: 200px;
+    text-align: center;
+    padding: 100px;
 }
 
 @media screen and (max-width:660px){
@@ -376,13 +375,13 @@ footer h3{
         justify-content: space-evenly;
     }
     .contacto h2{
-        font-size: 100%;
+        font-size: 25px;
     }
     .contacto p{
-        font-size: 100%;
+        font-size: 15px;
     }
     .boton{
-        font-size: 100%;
+        font-size: 15px;
     }
     .pacientes h2{
     font-size: 30px;
@@ -419,13 +418,13 @@ footer h3{
         text-align: center;
     }
     .contacto h2{
-        font-size: 70%;
+        font-size: 22px;
     }
     .contacto p{
-        font-size: 70%;
+        font-size: 13px;
     }
     .boton{
-        font-size: 70%;
+        font-size: 13px;
     }
 }
 
@@ -487,12 +486,8 @@ footer h3{
         height: 250px;
     }   
     .contacto{
-        height: 1700px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .contacto h2{
-        padding: 400px;
+        justify-content: end;
+        height: 1000px;
     }
 }
 
@@ -500,6 +495,9 @@ footer h3{
     header nav ul li{
         flex-direction: column;
         }
+    .textocontacto{
+        text-overflow: ellipsis;
+    }
 }
 
 @media screen and (max-width:250px){
