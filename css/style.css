@@ -55,7 +55,6 @@ header div a{
 
 .boton{
     border: 2px solid #030027 ;
-
 }
 
 
@@ -354,6 +353,8 @@ footer h3{
     color: #030027;
     background-color: #f8f8f8;
 }
+
+
 
 @media screen and (max-width:660px){
     header{
