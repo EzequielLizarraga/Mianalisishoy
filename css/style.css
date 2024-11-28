@@ -25,9 +25,6 @@ header div img{
     height: 130px;
 }
 
-header div img:hover{
-    transition: scale(1.2);
-}
 
 header nav ul{
     display: flex;
@@ -82,10 +79,6 @@ header div a{
 .titulo div{
     font-size: 20px;
     
-}
-
-.titulo div p{
-    font-size: 50px;
 }
 
 .titulo div a{
