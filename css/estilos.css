@@ -14,6 +14,12 @@ body {
   border: 2px solid #030027;
 }
 
+::placeholder {
+  background-color: #f8f8f8;
+  color: #030027;
+  font-size: 17px;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -109,6 +115,178 @@ header nav ul li a:hover {
   height: 30%;
   object-fit: contain;
   padding: 4px;
+}
+
+.contacto {
+  height: 900px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.textocontacto {
+  text-align: center;
+}
+
+.espacio {
+  text-align: center;
+  padding: 100px;
+}
+
+.pacientes h2 {
+  margin-bottom: 20px;
+  padding-top: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+.pacientes div {
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+}
+.pacientes form {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.pacientes form input {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.centrado select {
+  border-radius: 10px;
+  font-size: 16px;
+  color: #030027;
+  background-color: #f8f8f8;
+}
+
+.titulostaff {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.titulostaff h1 {
+  font-size: 30px;
+}
+
+.cartassec {
+  height: 600px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.cartas {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.cartas .carta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.cartadelantera {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #030027;
+}
+.cartadelantera:hover {
+  transform: perspective(600px) rotateY(180deg);
+}
+.cartadelantera img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cartadelantera h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #f8f8f8;
+  background: #030027;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cartatrasera {
+  transform: perspective(600px) rotateY(180deg);
+  background: #030027;
+  padding: 15px;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #030027;
+}
+.cartatrasera:hover {
+  transform: perspective(600px) rotateY(360deg);
+}
+.cartatrasera h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.cartatrasera p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.link {
+  border-top: solid 1px #f8f8f8;
+  height: 50px;
+  line-height: 50px;
+}
+.link a {
+  color: #f8f8f8;
+}
+
+.especialista {
+  height: 900px;
+  background-image: url(../img/quienessomos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.especialista h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 100px;
+  font-size: 40px;
+}
+.especialista div {
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+}
+
+.formulario input {
+  border-radius: 10px;
+  text-align: center;
 }
 
 footer {
