@@ -3,7 +3,7 @@
     height: auto;
     flex-direction: column;
     font-size: 12px;
-    background-color: #f8f8f8;
+    background-color:$color-1;
     }
     header nav ul{
         align-items: center;
@@ -12,7 +12,7 @@
     .contacto{
         flex-direction: column;
         height: auto;
-        background-color: #f8f8f8;
+        background-color:$color-1;
         justify-content: space-evenly;
     }
     .contacto h2{
@@ -86,7 +86,7 @@
     }
     header{
         flex-direction: column;
-        background-color: #f8f8f8;
+        background-color:$color-1;
         }
     .pacientes h2{
         font-size: 30px;
