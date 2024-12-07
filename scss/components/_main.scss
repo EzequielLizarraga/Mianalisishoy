@@ -13,7 +13,12 @@
         font-size: nth($font-size, 5);
         h2{
             text-align: center;
+            font-size: nth($font-size, 1);
             margin: 10px;
+            transition: 2s;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
     div {
@@ -93,6 +98,10 @@
         padding-top: 100px;
         font-size: nth($font-size, 1);
         text-align: center;
+        transition: 2s;
+            &:hover{
+                transform: scale(1.2);
+            }
     }
     div{
         font-size: nth($font-size, 5);
@@ -132,46 +141,38 @@
 .cartassec{
         height: 700px;
         background-color:$color-1;
-        @include flex (flex, center, start);
+        @extend %center;
 }
 
-.cartas{
-        background-color:$color-1;
-        width: 300px;
-        height: 350px;
-        margin: 20px;   
-}
 
-.cartas .carta{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 5px;
+.carta{
+        width: auto;
+        height: 50%;
+        margin: 20px;
+        transition: 1s;
+        &:hover{
+        transform: scale(1.1);
+        box-shadow: -2px 15px 20px 0px rgba(0,0,0,0.75); 
+        -webkit-box-shadow: -2px 15px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 15px 20px 0px rgba(0,0,0,0.75);
+        }
         img{
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
             width: 100%;
-            height: 100%;
-            object-fit: cover; 
+            height: 100%; 
         }
         h3{
-            height: 45px;
+            height: 30px;
             color:$color-1;
             background:$color-2;
             text-align: center;
             font-size: nth($font-size, 5); 
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
 }
 
-
-.link{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    a{
-        color:$color-2;
-    }
-}
 
 
 .especialista{
@@ -190,6 +191,10 @@
         margin-bottom: 20px;
         padding-top: 100px;
         font-size: nth($font-size, 1);
+        transition: 2s;
+            &:hover{
+                transform: scale(1.2);
+            }
     }
     div{
         font-size: 20px;
