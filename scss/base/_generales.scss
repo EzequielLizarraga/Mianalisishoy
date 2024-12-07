@@ -15,5 +15,5 @@ body{
 ::placeholder{
     background-color:  $color-1;
     color: $color-2;
-    font-size: 17px;
+    font-size: nth($font-size, 7);
 }

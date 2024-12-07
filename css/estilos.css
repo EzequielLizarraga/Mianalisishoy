@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.titulostaff, .contacto, .cartasindex, .funciona_titulo, .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,9 +72,6 @@ header div nav ul li a:hover {
   background-attachment: fixed;
   flex-direction: column;
   padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .titulo div {
   font-size: 20px;
@@ -90,9 +93,6 @@ header div nav ul li a:hover {
   background-color: #030027;
   height: 50px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .funciona_titulo h2 {
   color: #f8f8f8;
@@ -112,9 +112,6 @@ header div nav ul li a:hover {
 .cartasindex {
   flex-direction: column;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .cartasindex img {
   width: 30%;
@@ -129,9 +126,6 @@ header div nav ul li a:hover {
   background-color: #f8f8f8;
   flex-direction: column;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .textocontacto {
@@ -187,9 +181,6 @@ header div nav ul li a:hover {
   height: 200px;
   flex-direction: column;
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .titulostaff h1 {
   font-size: 30px;

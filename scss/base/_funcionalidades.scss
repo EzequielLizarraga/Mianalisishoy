@@ -2,10 +2,16 @@ $color-1: #f8f8f8;
 $color-2:  #030027;
 $color-3: #C16E70; 
 
-$font-size: 40px, 30px, 25px, 22px, 20px, 18px, 17px, 15px, 13px, 12px, 9px;
+$font-size: 40px, 30px, 25px, 22px, 20px, 18px, 17px, 15px, 13px, 12px, 9px, 16px;
 
 @mixin flex($flex, $justify, $align){
-    display: $flex ;
-    justify-content: $justify ;
-    align-items: $align ;
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
