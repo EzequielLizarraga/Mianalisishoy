@@ -15,3 +15,13 @@ $font-size: 40px, 30px, 25px, 22px, 20px, 18px, 17px, 15px, 13px, 12px, 9px, 16p
     justify-content: center;
     align-items: center;
 }
+@keyframes moveToRight {
+    0% {
+        opacity: 0;
+        left: -10000px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
