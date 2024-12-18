@@ -12,6 +12,7 @@
 div{
     font-size: nth($font-size, 5);
     h2{
+        @extend %borde;
         color: $color-1;
         text-align: center;
         font-size: nth($font-size, 1);
@@ -36,11 +37,20 @@ div {
 }
 }
 
+.botonpaciente{
+    color: $color-1;
+    a{
+    @extend %borde;    
+    color: $color-1;
+    }
+}
+
 .funciona_titulo{
 background-color: $color-2;
 height: 80px;
 @extend %center;
 h2{
+    @extend %borde;
     color:$color-1;
     font-size: nth($font-size, 5);
 
@@ -70,7 +80,8 @@ img{
 
 .contacto{
     height: 900px;
-    background-color:$color-1;
+    background-image: linear-gradient($color-1,$color-2);
+    /*background-color:$color-1;*/
     flex-direction: column;
     padding: 10px;
     @extend %center;
@@ -96,7 +107,10 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 padding: 40px;
+@extend %center;
 h2{
+    @extend %borde;
+    color: $color-1;
     margin-bottom: 20px;
     padding-top: 100px;
     font-size: nth($font-size, 1);
@@ -124,6 +138,7 @@ form{
 }
 }
 
+
 .centrado {
 select{
     border-radius: 10px;
@@ -134,18 +149,18 @@ select{
 }
 
 .titulostaff{
-    height: 200px;
+    height: 150px;
     flex-direction: column;
     background-color:$color-1;
-    @extend %center;
+    @include flex (flex, end, center);
 h1{
     font-size: nth($font-size, 2);
 }
 }
 
 .cartassec{
+    background-image: linear-gradient($color-1,$color-2);
     height: 700px;
-    background-color:$color-1;
     @extend %center;
 }
 
@@ -179,7 +194,7 @@ h1{
 
 
 .cartaspac{
-height: 800px;
+height: 900px;
 background-image: linear-gradient($color-1, $color-2);
 @include flex (flex, center, center)
 }
@@ -220,7 +235,7 @@ h3{
 
 
 .especialista{
-height: 500px;
+height: 900px;
 background-image: url(../img/quienessomos.jpg);
 background-position: center;
 background-repeat: no-repeat;
@@ -231,6 +246,7 @@ flex-direction: column;
 justify-content: space-evenly;
 padding: 40px;
 h2{
+    @extend %borde;
     color: $color-1;
     text-align: center;
     margin-bottom: 20px;
