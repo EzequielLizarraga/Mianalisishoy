@@ -75,7 +75,7 @@ header div nav ul li a:hover {
 }
 
 .titulo {
-  height: 900px;
+  height: 500px;
   text-align: center;
   background-image: url("../img/inicio2.jpg");
   background-position: center;
@@ -89,6 +89,7 @@ header div nav ul li a:hover {
   font-size: 20px;
 }
 .titulo div h2 {
+  color: #f8f8f8;
   text-align: center;
   font-size: 40px;
   margin: 10px;
@@ -97,12 +98,14 @@ header div nav ul li a:hover {
   animation-duration: 1.5s;
 }
 .titulo div {
+  color: #f8f8f8;
   font-size: 20px;
   position: relative;
   animation-name: moveToRight;
   animation-duration: 1.5s;
 }
 .titulo div a {
+  color: #f8f8f8;
   display: flex;
   align-items: center;
   margin: 10px;
@@ -110,13 +113,11 @@ header div nav ul li a:hover {
 
 .funciona_titulo {
   background-color: #030027;
-  height: 50px;
-  padding: 10px;
+  height: 80px;
 }
 .funciona_titulo h2 {
   color: #f8f8f8;
-  padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .funciona {
@@ -242,8 +243,49 @@ header div nav ul li a:hover {
   border-bottom-right-radius: 15px;
 }
 
+.cartaspac {
+  height: 800px;
+  background-image: linear-gradient(#f8f8f8, #030027);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartapaciente {
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+  transition: 1s;
+}
+.cartapaciente:hover {
+  transform: scale(1.1);
+}
+.cartapaciente img {
+  border-radius: 100px;
+  width: 100%;
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.cartapaciente p {
+  padding: 20px;
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 17px;
+}
+.cartapaciente h3 {
+  padding: 10px;
+  height: 40px;
+  color: #f8f8f8;
+  background: #030027;
+  text-align: center;
+  font-size: 18px;
+}
+
 .especialista {
-  height: 900px;
+  height: 500px;
   background-image: url(../img/quienessomos.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -255,6 +297,7 @@ header div nav ul li a:hover {
   padding: 40px;
 }
 .especialista h2 {
+  color: #f8f8f8;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 100px;
@@ -293,6 +336,26 @@ footer div img {
   padding: 5px;
 }
 
+@media screen and (max-width: 1018px) {
+  .cartaspac {
+    height: 1200px;
+  }
+  .cartapaciente {
+    width: 50%;
+  }
+  .cartapaciente p {
+    font-size: 15px;
+  }
+  .cartapaciente h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 851px) {
+  .cartaspac {
+    height: auto;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 660px) {
   header {
     height: auto;
@@ -336,6 +399,12 @@ footer div img {
     align-items: center;
     padding: 50px;
   }
+  .cartaspac {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
   .titulostaff {
     justify-content: center;
   }
@@ -368,6 +437,14 @@ footer div img {
     font-size: 13px;
   }
   .boton {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 461px) {
+  .cartaspac p {
+    font-size: 13px;
+  }
+  .cartaspac h3 {
     font-size: 13px;
   }
 }
