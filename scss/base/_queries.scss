@@ -1,3 +1,10 @@
+@media screen and (max-width:1200px) {
+    .infopaciente{
+        height: 1200px;
+        flex-direction: column;
+    }
+    
+}
 @media screen and (max-width:1018px){
     .cartaspac{
         height: 1200px;
@@ -72,7 +79,24 @@
     .titulostaff{
         justify-content: center;
     }
+    .infopaciente{
+        height: 1200px;
+        div{
+            height: 550px;
+            width: 450px;
+        }
+    }
+    .textoinfo{
+        height: auto;
+        width: auto;
+    }
 
+
+}
+@media screen and (max-width:550px){
+    .infopaciente{
+        height: 1500px;
+    }
 }
 @media screen and (max-width:500px){
     .funciona{
@@ -104,6 +128,7 @@
     .boton{
         font-size: nth($font-size, 9);
     }
+    
 
 }
 
@@ -114,6 +139,13 @@
         }
         h3{
         font-size: nth($font-size, 9);
+        }
+    }
+    .infopaciente{
+        height: 1800px;
+        div{
+            height: 350px;
+            width: 250px;
         }
     }
 }
@@ -187,6 +219,9 @@
     .textocontacto{
         text-overflow: ellipsis;
     }
+}
+.infopaciente{
+    height: 1800px;
 }
 
 @media screen and (max-width:250px){
