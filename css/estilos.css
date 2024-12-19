@@ -129,7 +129,7 @@ header div nav ul li a:hover {
 }
 .funciona_titulo h2 {
   color: #f8f8f8;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .funciona {
@@ -489,9 +489,6 @@ footer div img {
   }
   .funciona div {
     height: 90%;
-  }
-  .funciona_titulo h2 {
-    font-size: 15px;
   }
   footer {
     font-size: 12px;
