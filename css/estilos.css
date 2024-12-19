@@ -524,6 +524,9 @@ footer div img {
     height: 350px;
     width: 250px;
   }
+  .funciona_titulo h2 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 426px) {
   .indice4 {
