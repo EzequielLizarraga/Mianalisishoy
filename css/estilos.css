@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-.cartassec, .textoinfo, .pacientes, .contacto, .cartasindex, .funciona_titulo, .titulo {
+.cartassec, .pacientes, .contacto, .cartasindex, .funciona_titulo, .titulo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,14 +210,12 @@ header div nav ul li a:hover {
 }
 
 .infopaciente {
-  height: 200px;
   width: auto;
   background-image: linear-gradient(#f8f8f8, #030027);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  padding: 20px;
+  padding: 5px;
 }
 .infopaciente div {
   height: 700px;
@@ -240,6 +238,7 @@ header div nav ul li a:hover {
   width: 500px;
   margin: 40px;
   padding: 10px;
+  text-align: center;
   opacity: 1;
   font-size: 18px;
   color: #f8f8f8;
@@ -313,9 +312,9 @@ header div nav ul li a:hover {
   transform: scale(1.1);
 }
 .cartapaciente img {
-  border-radius: 100px;
+  border-radius: 150px;
   width: 100%;
-  height: 70%;
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,7 +324,7 @@ header div nav ul li a:hover {
   padding: 20px;
   text-align: center;
   color: #f8f8f8;
-  font-size: 17px;
+  font-size: auto;
 }
 .cartapaciente h3 {
   padding: 10px;
