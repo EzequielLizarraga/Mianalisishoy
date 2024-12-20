@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-.cartassec, .pacientes, .contacto, .cartasindex, .funciona_titulo, .titulo {
+.cartassec, .contacto, .cartasindex, .funciona_titulo, .titulo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,11 +15,6 @@
     left: 0;
   }
 }
-.especialista h2, .pacientes h2, .funciona_titulo h2, .botonpaciente a, .titulo div h2 {
-  text-shadow: 1px 0px 0px #030027, 0px 1px 0px #030027, -1px 0px 0px #030027, 0px -1px 0px #030027;
-  filter: blur(3);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -32,20 +27,98 @@ body {
 }
 
 .boton {
-  border: 2px solid #030027;
+  border: 2px solid #f8f8f8;
   transition: 0.7s;
+  color: #f8f8f8;
 }
 
 ::-moz-placeholder {
-  background-color: #f8f8f8;
-  color: #030027;
+  opacity: 0.8;
+  color: #f8f8f8;
   font-size: 17px;
+  text-align: center;
 }
 
 ::placeholder {
-  background-color: #f8f8f8;
-  color: #030027;
+  opacity: 0.8;
+  color: #f8f8f8;
   font-size: 17px;
+  text-align: center;
+}
+
+.controles {
+  width: 80%;
+  background: #030027;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
+  border: 1px solid #C16E70;
+  font-size: 18px;
+  transition: 1s;
+  color: #f8f8f8;
+}
+.controles:hover {
+  border: 1px solid #f8f8f8;
+}
+
+.terminos {
+  color: #C16E70;
+  text-decoration: none;
+  transition: 1s;
+}
+.terminos:hover {
+  transform: scale(1.1);
+  color: #f8f8f8;
+}
+
+.titulotexto {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  width: 10px;
+  color: #C16E70;
+  font-size: 22px;
+}
+
+.parrafo {
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
+}
+
+.titulotextoprincipal {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 10px;
+  color: #C16E70;
+  font-size: 55px;
+  font-stretch: 100%;
+  opacity: 5;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.tituloquienessomos {
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 10px;
+  color: #f8f8f8;
+  font-size: 30px;
+  font-stretch: 100%;
+  opacity: 5;
+}
+
+.titulocartaindex {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 10px;
+  color: #030027;
+  font-size: 20px;
+  font-stretch: 100%;
+  opacity: 5;
 }
 
 header {
@@ -80,9 +153,9 @@ header div nav ul li a:hover {
 }
 
 .titulo {
-  height: 600px;
+  height: 700px;
   text-align: center;
-  background-image: url("../img/inicio2.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), url("../img/inicio2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,10 +206,10 @@ header div nav ul li a:hover {
 }
 
 .funciona {
-  background-color: #f8f8f8;
+  background-image: linear-gradient(#f8f8f8, #030027);
   height: 250px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 3fr);
   grid-auto-rows: 250px;
   gap: 15px;
 }
@@ -146,18 +219,30 @@ header div nav ul li a:hover {
   padding: 30px;
 }
 .cartasindex img {
-  width: 30%;
-  height: 30%;
+  opacity: 2;
+  width: 40%;
+  height: 40%;
   -o-object-fit: contain;
      object-fit: contain;
   padding: 4px;
 }
+.cartasindex p {
+  text-align: center;
+  padding: 15px;
+  color: #f8f8f8;
+}
 
 .contacto {
   height: 900px;
-  background-image: linear-gradient(#f8f8f8, #030027);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), linear-gradient(#f8f8f8, #030027);
   flex-direction: column;
-  padding: 10px;
+  padding: 40px;
+}
+.contacto h2 {
+  font-size: 50px;
+}
+.contacto p {
+  color: #f8f8f8;
 }
 
 .textocontacto {
@@ -170,23 +255,25 @@ header div nav ul li a:hover {
 }
 
 .pacientes {
-  height: 600px;
-  background-image: url(../img/inicio.jpg);
+  width: auto;
+  height: 800px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), url(../img/inicio.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 70px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
 }
 .pacientes h2 {
+  width: auto;
   color: #f8f8f8;
+  text-align: center;
   margin-bottom: 20px;
   padding-top: 100px;
   font-size: 40px;
-  text-align: center;
   position: relative;
   animation-name: moveToRight;
   animation-duration: 1.5s;
@@ -199,26 +286,50 @@ header div nav ul li a:hover {
   animation-name: moveToRight;
   animation-duration: 1.5s;
 }
-.pacientes form {
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 80%;
+  background-color: #030027;
+  margin: auto;
+  padding: 30px;
+  margin-top: 100px;
+  border-radius: 20px;
+  color: #f8f8f8;
+  opacity: 0.9;
+}
+.formulario h3 {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  color: #C16E70;
+  font-size: 22px;
+}
+.formulario p {
+  padding: 10px;
+  height: 40px;
   text-align: center;
-  padding: 20px;
   font-size: 20px;
 }
-.pacientes form input {
-  border-radius: 10px;
-  text-align: center;
+.formulario .btn {
+  padding: 10px;
 }
 
 .infopaciente {
   width: auto;
-  background-image: linear-gradient(#f8f8f8, #030027);
+  height: auto;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), linear-gradient(#f8f8f8, #030027);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 .infopaciente div {
-  height: 700px;
+  height: 600px;
   width: 600px;
   margin: 50px;
   border-radius: 50px;
@@ -227,6 +338,7 @@ header div nav ul li a:hover {
   -moz-box-shadow: -2px 15px 20px 0px #030027;
 }
 .infopaciente div img {
+  position: static;
   border-radius: 50px;
   width: 100%;
   height: 100%;
@@ -234,8 +346,8 @@ header div nav ul li a:hover {
 }
 
 .textoinfo {
-  height: 600px;
-  width: 500px;
+  height: auto;
+  width: 550px;
   margin: 40px;
   padding: 10px;
   text-align: center;
@@ -252,19 +364,20 @@ header div nav ul li a:hover {
 }
 
 .titulostaff {
-  height: 150px;
+  height: 80px;
   flex-direction: column;
-  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), #030027;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 .titulostaff h1 {
+  color: #f8f8f8;
   font-size: 30px;
 }
 
 .cartassec {
-  background-image: linear-gradient(#f8f8f8, #030027);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), linear-gradient(#f8f8f8, #030027);
   height: 700px;
 }
 
@@ -296,15 +409,19 @@ header div nav ul li a:hover {
 
 .cartaspac {
   height: 900px;
-  background-image: linear-gradient(#f8f8f8, #030027);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), linear-gradient(#f8f8f8, #030027);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cartapaciente {
-  width: 50%;
-  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
   margin: 20px;
   transition: 1s;
 }
@@ -313,12 +430,14 @@ header div nav ul li a:hover {
 }
 .cartapaciente img {
   border-radius: 150px;
-  width: 100%;
+  width: 60%;
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cartapaciente p {
   padding: 20px;
@@ -336,18 +455,19 @@ header div nav ul li a:hover {
 }
 
 .especialista {
-  height: 600px;
-  background-image: url(../img/quienessomos.jpg);
+  height: 800px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), url(../img/quienessomos.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 70px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
 }
 .especialista h2 {
+  width: auto;
   color: #f8f8f8;
   text-align: center;
   margin-bottom: 20px;
@@ -389,8 +509,22 @@ footer div img {
 
 @media screen and (max-width: 1200px) {
   .infopaciente {
-    height: 1200px;
+    height: auto;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1089px) {
+  .pacientes {
+    height: auto;
+    flex-direction: column;
+  }
+  .especialista {
+    height: auto;
+    flex-direction: column;
+  }
+  .formulario {
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 1018px) {
@@ -466,15 +600,15 @@ footer div img {
     justify-content: center;
   }
   .infopaciente {
-    height: 1200px;
-  }
-  .infopaciente div {
-    height: 550px;
-    width: 450px;
+    width: auto;
   }
   .textoinfo {
     height: auto;
     width: auto;
+  }
+  .formulario p {
+    font-size: 15px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -597,11 +731,10 @@ footer div img {
   .textocontacto {
     text-overflow: ellipsis;
   }
+  .infopaciente {
+    height: 2000px;
+  }
 }
-.infopaciente {
-  height: 1800px;
-}
-
 @media screen and (max-width: 250px) {
   .funciona_titulo h2 {
     text-align: center;

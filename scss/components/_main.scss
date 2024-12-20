@@ -1,7 +1,7 @@
 .titulo {
-    height: 600px;
+    height: 700px;
     text-align: center;
-    background-image: url("../img/inicio2.jpg");
+    background: $fondoimagen, url("../img/inicio2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,6 @@
 div{
     font-size: nth($font-size, 5);
     h2{
-        @extend %borde;
         color: $color-1;
         text-align: center;
         font-size: nth($font-size, 1);
@@ -39,8 +38,7 @@ div {
 
 .botonpaciente{
     color: $color-1;
-    a{
-    @extend %borde;    
+    a{   
     color: $color-1;
     }
 }
@@ -50,7 +48,6 @@ background-color: $color-2;
 height: 80px;
 @extend %center;
 h2{
-    @extend %borde;
     color:$color-1;
     font-size: nth($font-size, 3);
 
@@ -58,10 +55,10 @@ h2{
 }
 
 .funciona{
-background-color: $color-1;
+background-image:linear-gradient($color-1, $color-2);
 height: 250px;
 display: grid;
-grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(3,3fr);
 grid-auto-rows: 250px;
 gap: 15px;
 }
@@ -71,19 +68,31 @@ gap: 15px;
     padding: 30px;
     @extend %center;
 img{
-    width: 30%;
-    height: 30%;
+    opacity: 2;
+    width: 40%;
+    height: 40%;
     object-fit: contain;
     padding: 4px; 
+}
+p{
+    text-align: center;
+    padding: 15px;
+    color: $color-1;
 }
 }
 
 .contacto{
     height: 900px;
-    background-image: linear-gradient($color-1,$color-2);
+    background-image: $fondoimagen, linear-gradient($color-1,$color-2);
     flex-direction: column;
-    padding: 10px;
+    padding: 40px;
     @extend %center;
+    h2{
+        font-size: 50px;
+    }
+    p{
+        color: $color-1;
+    }
 }
 
 .textocontacto{
@@ -96,24 +105,22 @@ img{
 }
 
 .pacientes{
-height: 600px;
-background-image: url(../img/inicio.jpg);
+width: auto;
+height: 800px;
+background: $fondoimagen ,url(../img/inicio.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-padding: 40px;
-@extend %center;
+padding: 70px;
+@include flex (flex, space-around, center);
 h2{
-    @extend %borde;
+    width: auto;
     color: $color-1;
+    text-align: center;
     margin-bottom: 20px;
     padding-top: 100px;
     font-size: nth($font-size, 1);
-    text-align: center;
     position: relative;
     animation-name: moveToRight;
     animation-duration: 1.5s;
@@ -126,24 +133,47 @@ div{
     animation-name: moveToRight;
     animation-duration: 1.5s;
 }
-form{
-    text-align: center;
-    padding: 20px;
-    font-size: nth($font-size, 5);
-    input{
-        border-radius: 10px;
-        text-align: center; 
+}
+
+.formulario{
+    @include flex (flex, center, center);
+    flex-direction: column;
+    width: auto;
+    height: 80%;
+    background-color: $color-2;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+    color: $color-1;
+    opacity: 0.90;
+    h3{
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: $color-3;
+    font-size: nth($font-size, 4 );
+    }
+    p{
+        padding: 10px;
+        height: 40px;
+        text-align: center;
+        font-size: nth($font-size, 5 );
+    }
+    .btn{
+        padding: 10px;
     }
 }
-}
+
 
 .infopaciente{
     width: auto;
-    background-image: linear-gradient($color-1,$color-2);
+    height: auto;
+    background-image: $fondoimagen, linear-gradient($color-1,$color-2);
     @include flex (flex, center, center);
-    padding: 5px;
+    padding: 10px;
     div{
-        height: 700px;
+        height: 600px;
         width: 600px;
         margin: 50px;
         border-radius: 50px;
@@ -151,6 +181,7 @@ form{
         -webkit-box-shadow: -2px 15px 20px 0px $color-2;
         -moz-box-shadow: -2px 15px 20px 0px $color-2; 
         img{
+            position: static;
             border-radius: 50px;
             width: 100%;
             height: 100%;
@@ -160,8 +191,8 @@ form{
     }
 
 .textoinfo{
-    height: 600px;
-    width: 500px;
+    height: auto;
+    width: 550px;
     margin: 40px;
     padding: 10px;
     text-align: center;
@@ -181,17 +212,19 @@ select{
 }
 
 .titulostaff{
-    height: 150px;
+    height: 80px;
     flex-direction: column;
-    background-color:$color-1;
-    @include flex (flex, end, center);
+    background: $fondoimagen, $color-2;
+    @include flex (flex, center, center);
 h1{
+    color: $color-1;
     font-size: nth($font-size, 2);
+    
 }
 }
 
 .cartassec{
-    background-image: linear-gradient($color-1,$color-2);
+    background-image:$fondoimagen, linear-gradient($color-1,$color-2);
     height: 700px;
     @extend %center;
 }
@@ -227,14 +260,16 @@ h1{
 
 .cartaspac{
 height: 900px;
-background-image: linear-gradient($color-1, $color-2);
+background-image: $fondoimagen, linear-gradient($color-1, $color-2);
 @include flex (flex, center, center)
 }
 
 
 .cartapaciente{
-width: 50%;
-height: 50%;
+@include flex (flex, space-around, center);
+flex-direction: column;
+width: 400px;
+height: 400px;
 margin: 20px;
 transition: 1s;
 &:hover{
@@ -242,12 +277,13 @@ transform: scale(1.1);
 }
 img{
     border-radius: 150px;
-    width: 100%;
+    width: 60%;
     height: 50%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    object-fit: cover;
 }
 p{
     padding: 20px;
@@ -267,18 +303,16 @@ h3{
 
 
 .especialista{
-height: 600px;
-background-image: url(../img/quienessomos.jpg);
+height: 800px;
+background: $fondoimagen ,url(../img/quienessomos.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed; 
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-padding: 40px;
+padding: 70px;
+@include flex (flex, space-around, center);
 h2{
-    @extend %borde;
+    width: auto;
     color: $color-1;
     text-align: center;
     margin-bottom: 20px;
@@ -303,3 +337,4 @@ div{
     }
 }
 }
+
