@@ -198,6 +198,9 @@
     .titulotextoprincipal{
         font-size: nth($font-size, 2);
     }
+    .infopaciente{
+        height: auto;
+    }
 
 }
 
@@ -271,7 +274,7 @@
         text-overflow: ellipsis;
     }
     .infopaciente{
-        height: 2000px;
+        height: auto;
 }
 }
 
