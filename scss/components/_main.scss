@@ -222,7 +222,8 @@ h1{
 
 .cartassec{
     background-image:$fondoimagen, linear-gradient($color-1,$color-2);
-    height: 700px;
+    height: 900px;
+    width: auto;
     @extend %center;
 }
 

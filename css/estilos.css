@@ -375,7 +375,8 @@ header div nav ul li a:hover {
 
 .cartassec {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), linear-gradient(#f8f8f8, #030027);
-  height: 700px;
+  height: 900px;
+  width: auto;
 }
 
 .carta {
@@ -552,6 +553,10 @@ footer div img {
   .infopaciente div {
     height: 500px;
     width: 400px;
+  }
+  .funciona {
+    height: auto;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 660px) {
